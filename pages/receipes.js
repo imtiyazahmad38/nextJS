@@ -1,9 +1,5 @@
 import Receipecomponent from '../src/receipe/receipecomponent'
-import { Layout } from '../src/layout/Container';
-
-
-  const ReceipeList = Layout(Receipecomponent);
-
+import  Layout  from '../src/layout/Container';
   export default function Receipe(props) {
-    return <ReceipeList {...props}/>
+    return <Layout><Receipecomponent {...props}/></Layout>
   }
