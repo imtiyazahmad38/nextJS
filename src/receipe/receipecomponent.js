@@ -1,15 +1,15 @@
-import FilterPanel from './FilterPanel'
-import TagsPanel from './TagsPanel'
-import CollectionPanel from './CollectionPanel'
-
+import FilterPanel from "./FilterPanel";
+import TagsPanel from "./TagsPanel";
+import CollectionPanel from "./CollectionPanel";
+import Link from 'next/link'
 
 export default function Receipecomponent() {
-    return (
+  return (
     <>
-    <CollectionPanel/>
-    <FilterPanel/>
-    <TagsPanel/>
-    <main className="main">
+      <CollectionPanel />
+      <FilterPanel />
+      <TagsPanel />
+      <main className="main">
         <div className="main__top-actions mb-20">
           <button
             type="button"
@@ -112,7 +112,7 @@ export default function Receipecomponent() {
           <table className="custom-table products-table hide">
             <thead>
               <tr>
-                <th>Product Name</th>
+                <th>Product Names</th>
                 <th>Type</th>
                 <th>Brand</th>
                 <th>Price</th>
@@ -128,7 +128,9 @@ export default function Receipecomponent() {
                     <figure className="mr-10">
                       <img src="images/product-img.jpg" alt="" />
                     </figure>
+                    <Link href="/recipedetail/Almonds" >
                     Almonds
+                    </Link>
                   </div>
                 </td>
                 <td>Ingredient</td>
@@ -138,7 +140,6 @@ export default function Receipecomponent() {
                 <td>289</td>
                 <td>
                   <div className="custom-table__actions d-flex align-items-center">
-
                     <button
                       type="button"
                       className="btn-icon-fade btn-icon-small show-panel"
@@ -146,10 +147,17 @@ export default function Receipecomponent() {
                     >
                       <i className="tags-icon"></i>
                     </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
+                    <button
+                      type="button"
+                      className="btn-icon-fade btn-icon-small show-panel"
+                      data-target="#item-collections-panel"
+                    >
                       <i className="layer-plus-icon"></i>
                     </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small">
+                    <button
+                      type="button"
+                      className="btn-icon-fade btn-icon-small"
+                    >
                       <i className="chart-bar-icon"></i>
                     </button>
                     <label htmlFor="publish12" className="custom-switch">
@@ -195,7 +203,9 @@ export default function Receipecomponent() {
                     <figure className="mr-10">
                       <img src="images/product-img.jpg" alt="" />
                     </figure>
-                    Almonds
+                    <Link href="/recipedetail/Almonds2" >
+                    Almonds2
+                    </Link>
                   </div>
                 </td>
                 <td>Ingredient</td>
@@ -205,7 +215,6 @@ export default function Receipecomponent() {
                 <td>289</td>
                 <td>
                   <div className="custom-table__actions d-flex align-items-center">
-
                     <button
                       type="button"
                       className="btn-icon-fade btn-icon-small show-panel"
@@ -213,10 +222,17 @@ export default function Receipecomponent() {
                     >
                       <i className="tags-icon"></i>
                     </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
+                    <button
+                      type="button"
+                      className="btn-icon-fade btn-icon-small show-panel"
+                      data-target="#item-collections-panel"
+                    >
                       <i className="layer-plus-icon"></i>
                     </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small">
+                    <button
+                      type="button"
+                      className="btn-icon-fade btn-icon-small"
+                    >
                       <i className="chart-bar-icon"></i>
                     </button>
                     <label htmlFor="publish12" className="custom-switch">
@@ -262,7 +278,9 @@ export default function Receipecomponent() {
                     <figure className="mr-10">
                       <img src="images/product-img.jpg" alt="" />
                     </figure>
-                    Almonds
+                    <Link href="/recipedetail/Almonds3" >
+                    Almonds3
+                    </Link>
                   </div>
                 </td>
                 <td>Ingredient</td>
@@ -272,7 +290,6 @@ export default function Receipecomponent() {
                 <td>289</td>
                 <td>
                   <div className="custom-table__actions d-flex align-items-center">
-
                     <button
                       type="button"
                       className="btn-icon-fade btn-icon-small show-panel"
@@ -280,10 +297,17 @@ export default function Receipecomponent() {
                     >
                       <i className="tags-icon"></i>
                     </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
+                    <button
+                      type="button"
+                      className="btn-icon-fade btn-icon-small show-panel"
+                      data-target="#item-collections-panel"
+                    >
                       <i className="layer-plus-icon"></i>
                     </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small">
+                    <button
+                      type="button"
+                      className="btn-icon-fade btn-icon-small"
+                    >
                       <i className="chart-bar-icon"></i>
                     </button>
                     <label htmlFor="publish12" className="custom-switch">
@@ -329,7 +353,9 @@ export default function Receipecomponent() {
                     <figure className="mr-10">
                       <img src="images/product-img.jpg" alt="" />
                     </figure>
-                    Almonds
+                    <Link href="/recipedetail/Almonds4" >
+                    Almonds4
+                    </Link>
                   </div>
                 </td>
                 <td>Ingredient</td>
@@ -339,7 +365,6 @@ export default function Receipecomponent() {
                 <td>289</td>
                 <td>
                   <div className="custom-table__actions d-flex align-items-center">
-
                     <button
                       type="button"
                       className="btn-icon-fade btn-icon-small show-panel"
@@ -347,613 +372,17 @@ export default function Receipecomponent() {
                     >
                       <i className="tags-icon"></i>
                     </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
-                      <i className="layer-plus-icon"></i>
-                    </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small">
-                      <i className="chart-bar-icon"></i>
-                    </button>
-                    <label htmlFor="publish12" className="custom-switch">
-                      <input type="checkbox" id="publish12" />
-                      <span>&nbsp;</span>
-                    </label>
-                    <div className="dropdown">
-                      <button
-                        type="button"
-                        className="btn-icon-fade btn-icon-small dropdown__toggle"
-                      >
-                        <i className="ellipsis-v-icon"></i>
-                      </button>
-                      <div className="dropdown__menu">
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i className="pen-icon"></i>
-                              Edit
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i className="clone-icon"></i>
-                              Clone
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#" className="text-red">
-                              <i className="trash-icon"></i>
-                              Delete
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div className="d-flex align-items-center">
-                    <figure className="mr-10">
-                      <img src="images/product-img.jpg" alt="" />
-                    </figure>
-                    Almonds
-                  </div>
-                </td>
-                <td>Ingredient</td>
-                <td>Plant Milk Makers</td>
-                <td>19.99</td>
-                <td>2078</td>
-                <td>289</td>
-                <td>
-                  <div className="custom-table__actions d-flex align-items-center">
-
                     <button
                       type="button"
                       className="btn-icon-fade btn-icon-small show-panel"
-                      data-target="#tags-panel"
+                      data-target="#item-collections-panel"
                     >
-                      <i className="tags-icon"></i>
-                    </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
                       <i className="layer-plus-icon"></i>
                     </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small">
-                      <i className="chart-bar-icon"></i>
-                    </button>
-                    <label htmlFor="publish12" className="custom-switch">
-                      <input type="checkbox" id="publish12" />
-                      <span>&nbsp;</span>
-                    </label>
-                    <div className="dropdown">
-                      <button
-                        type="button"
-                        className="btn-icon-fade btn-icon-small dropdown__toggle"
-                      >
-                        <i className="ellipsis-v-icon"></i>
-                      </button>
-                      <div className="dropdown__menu">
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i className="pen-icon"></i>
-                              Edit
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i className="clone-icon"></i>
-                              Clone
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#" className="text-red">
-                              <i className="trash-icon"></i>
-                              Delete
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div className="d-flex align-items-center">
-                    <figure className="mr-10">
-                      <img src="images/product-img.jpg" alt="" />
-                    </figure>
-                    Almonds
-                  </div>
-                </td>
-                <td>Ingredient</td>
-                <td>Plant Milk Makers</td>
-                <td>19.99</td>
-                <td>2078</td>
-                <td>289</td>
-                <td>
-                  <div className="custom-table__actions d-flex align-items-center">
-
                     <button
                       type="button"
-                      className="btn-icon-fade btn-icon-small show-panel"
-                      data-target="#tags-panel"
+                      className="btn-icon-fade btn-icon-small"
                     >
-                      <i className="tags-icon"></i>
-                    </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
-                      <i className="layer-plus-icon"></i>
-                    </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small">
-                      <i className="chart-bar-icon"></i>
-                    </button>
-                    <label htmlFor="publish12" className="custom-switch">
-                      <input type="checkbox" id="publish12" />
-                      <span>&nbsp;</span>
-                    </label>
-                    <div className="dropdown">
-                      <button
-                        type="button"
-                        className="btn-icon-fade btn-icon-small dropdown__toggle"
-                      >
-                        <i className="ellipsis-v-icon"></i>
-                      </button>
-                      <div className="dropdown__menu">
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i className="pen-icon"></i>
-                              Edit
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i className="clone-icon"></i>
-                              Clone
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#" className="text-red">
-                              <i className="trash-icon"></i>
-                              Delete
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div className="d-flex align-items-center">
-                    <figure className="mr-10">
-                      <img src="images/product-img.jpg" alt="" />
-                    </figure>
-                    Almonds
-                  </div>
-                </td>
-                <td>Ingredient</td>
-                <td>Plant Milk Makers</td>
-                <td>19.99</td>
-                <td>2078</td>
-                <td>289</td>
-                <td>
-                  <div className="custom-table__actions d-flex align-items-center">
-
-                    <button
-                      type="button"
-                      className="btn-icon-fade btn-icon-small show-panel"
-                      data-target="#tags-panel"
-                    >
-                      <i className="tags-icon"></i>
-                    </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
-                      <i className="layer-plus-icon"></i>
-                    </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small">
-                      <i className="chart-bar-icon"></i>
-                    </button>
-                    <label htmlFor="publish12" className="custom-switch">
-                      <input type="checkbox" id="publish12" />
-                      <span>&nbsp;</span>
-                    </label>
-                    <div className="dropdown">
-                      <button
-                        type="button"
-                        className="btn-icon-fade btn-icon-small dropdown__toggle"
-                      >
-                        <i className="ellipsis-v-icon"></i>
-                      </button>
-                      <div className="dropdown__menu">
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i className="pen-icon"></i>
-                              Edit
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i className="clone-icon"></i>
-                              Clone
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#" className="text-red">
-                              <i className="trash-icon"></i>
-                              Delete
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div className="d-flex align-items-center">
-                    <figure className="mr-10">
-                      <img src="images/product-img.jpg" alt="" />
-                    </figure>
-                    Almonds
-                  </div>
-                </td>
-                <td>Ingredient</td>
-                <td>Plant Milk Makers</td>
-                <td>19.99</td>
-                <td>2078</td>
-                <td>289</td>
-                <td>
-                  <div className="custom-table__actions d-flex align-items-center">
-
-                    <button
-                      type="button"
-                      className="btn-icon-fade btn-icon-small show-panel"
-                      data-target="#tags-panel"
-                    >
-                      <i className="tags-icon"></i>
-                    </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
-                      <i className="layer-plus-icon"></i>
-                    </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small">
-                      <i className="chart-bar-icon"></i>
-                    </button>
-                    <label htmlFor="publish12" className="custom-switch">
-                      <input type="checkbox" id="publish12" />
-                      <span>&nbsp;</span>
-                    </label>
-                    <div className="dropdown">
-                      <button
-                        type="button"
-                        className="btn-icon-fade btn-icon-small dropdown__toggle"
-                      >
-                        <i className="ellipsis-v-icon"></i>
-                      </button>
-                      <div className="dropdown__menu">
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i className="pen-icon"></i>
-                              Edit
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i className="clone-icon"></i>
-                              Clone
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#" className="text-red">
-                              <i className="trash-icon"></i>
-                              Delete
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div className="d-flex align-items-center">
-                    <figure className="mr-10">
-                      <img src="images/product-img.jpg" alt="" />
-                    </figure>
-                    Almonds
-                  </div>
-                </td>
-                <td>Ingredient</td>
-                <td>Plant Milk Makers</td>
-                <td>19.99</td>
-                <td>2078</td>
-                <td>289</td>
-                <td>
-                  <div className="custom-table__actions d-flex align-items-center">
-
-                    <button
-                      type="button"
-                      className="btn-icon-fade btn-icon-small show-panel"
-                      data-target="#tags-panel"
-                    >
-                      <i className="tags-icon"></i>
-                    </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
-                      <i className="layer-plus-icon"></i>
-                    </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small">
-                      <i className="chart-bar-icon"></i>
-                    </button>
-                    <label htmlFor="publish12" className="custom-switch">
-                      <input type="checkbox" id="publish12" />
-                      <span>&nbsp;</span>
-                    </label>
-                    <div className="dropdown">
-                      <button
-                        type="button"
-                        className="btn-icon-fade btn-icon-small dropdown__toggle"
-                      >
-                        <i className="ellipsis-v-icon"></i>
-                      </button>
-                      <div className="dropdown__menu">
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i className="pen-icon"></i>
-                              Edit
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i className="clone-icon"></i>
-                              Clone
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#" className="text-red">
-                              <i className="trash-icon"></i>
-                              Delete
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div className="d-flex align-items-center">
-                    <figure className="mr-10">
-                      <img src="images/product-img.jpg" alt="" />
-                    </figure>
-                    Almonds
-                  </div>
-                </td>
-                <td>Ingredient</td>
-                <td>Plant Milk Makers</td>
-                <td>19.99</td>
-                <td>2078</td>
-                <td>289</td>
-                <td>
-                  <div className="custom-table__actions d-flex align-items-center">
-
-                    <button
-                      type="button"
-                      className="btn-icon-fade btn-icon-small show-panel"
-                      data-target="#tags-panel"
-                    >
-                      <i className="tags-icon"></i>
-                    </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
-                      <i className="layer-plus-icon"></i>
-                    </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small">
-                      <i className="chart-bar-icon"></i>
-                    </button>
-                    <label htmlFor="publish12" className="custom-switch">
-                      <input type="checkbox" id="publish12" />
-                      <span>&nbsp;</span>
-                    </label>
-                    <div className="dropdown">
-                      <button
-                        type="button"
-                        className="btn-icon-fade btn-icon-small dropdown__toggle"
-                      >
-                        <i className="ellipsis-v-icon"></i>
-                      </button>
-                      <div className="dropdown__menu">
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i className="pen-icon"></i>
-                              Edit
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i className="clone-icon"></i>
-                              Clone
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#" className="text-red">
-                              <i className="trash-icon"></i>
-                              Delete
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div className="d-flex align-items-center">
-                    <figure className="mr-10">
-                      <img src="images/product-img.jpg" alt="" />
-                    </figure>
-                    Almonds
-                  </div>
-                </td>
-                <td>Ingredient</td>
-                <td>Plant Milk Makers</td>
-                <td>19.99</td>
-                <td>2078</td>
-                <td>289</td>
-                <td>
-                  <div className="custom-table__actions d-flex align-items-center">
-
-                    <button
-                      type="button"
-                      className="btn-icon-fade btn-icon-small show-panel"
-                      data-target="#tags-panel"
-                    >
-                      <i className="tags-icon"></i>
-                    </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
-                      <i className="layer-plus-icon"></i>
-                    </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small">
-                      <i className="chart-bar-icon"></i>
-                    </button>
-                    <label htmlFor="publish12" className="custom-switch">
-                      <input type="checkbox" id="publish12" />
-                      <span>&nbsp;</span>
-                    </label>
-                    <div className="dropdown">
-                      <button
-                        type="button"
-                        className="btn-icon-fade btn-icon-small dropdown__toggle"
-                      >
-                        <i className="ellipsis-v-icon"></i>
-                      </button>
-                      <div className="dropdown__menu">
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i className="pen-icon"></i>
-                              Edit
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i className="clone-icon"></i>
-                              Clone
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#" className="text-red">
-                              <i className="trash-icon"></i>
-                              Delete
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div className="d-flex align-items-center">
-                    <figure className="mr-10">
-                      <img src="images/product-img.jpg" alt="" />
-                    </figure>
-                    Almonds
-                  </div>
-                </td>
-                <td>Ingredient</td>
-                <td>Plant Milk Makers</td>
-                <td>19.99</td>
-                <td>2078</td>
-                <td>289</td>
-                <td>
-                  <div className="custom-table__actions d-flex align-items-center">
-
-                    <button
-                      type="button"
-                      className="btn-icon-fade btn-icon-small show-panel"
-                      data-target="#tags-panel"
-                    >
-                      <i className="tags-icon"></i>
-                    </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
-                      <i className="layer-plus-icon"></i>
-                    </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small">
-                      <i className="chart-bar-icon"></i>
-                    </button>
-                    <label htmlFor="publish12" className="custom-switch">
-                      <input type="checkbox" id="publish12" />
-                      <span>&nbsp;</span>
-                    </label>
-                    <div className="dropdown">
-                      <button
-                        type="button"
-                        className="btn-icon-fade btn-icon-small dropdown__toggle"
-                      >
-                        <i className="ellipsis-v-icon"></i>
-                      </button>
-                      <div className="dropdown__menu">
-                        <ul>
-                          <li>
-                            <a href="#">
-                              <i className="pen-icon"></i>
-                              Edit
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              <i className="clone-icon"></i>
-                              Clone
-                            </a>
-                          </li>
-                          <li>
-                            <a href="#" className="text-red">
-                              <i className="trash-icon"></i>
-                              Delete
-                            </a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div className="d-flex align-items-center">
-                    <figure className="mr-10">
-                      <img src="images/product-img.jpg" alt="" />
-                    </figure>
-                    Almonds
-                  </div>
-                </td>
-                <td>Ingredient</td>
-                <td>Plant Milk Makers</td>
-                <td>19.99</td>
-                <td>2078</td>
-                <td>289</td>
-                <td>
-                  <div className="custom-table__actions d-flex align-items-center">
-
-                    <button
-                      type="button"
-                      className="btn-icon-fade btn-icon-small show-panel"
-                      data-target="#tags-panel"
-                    >
-                      <i className="tags-icon"></i>
-                    </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
-                      <i className="layer-plus-icon"></i>
-                    </button>
-                    <button type="button" className="btn-icon-fade btn-icon-small">
                       <i className="chart-bar-icon"></i>
                     </button>
                     <label htmlFor="publish12" className="custom-switch">
@@ -996,9 +425,12 @@ export default function Receipecomponent() {
             </tbody>
           </table>
           <div className="products">
+          
             <div className="product">
               <div className="product__title">
+              <Link href="/recipedetail/Almonds" >
                 <h4>Almonds</h4>
+                </Link>
                 <div className="dropdown">
                   <button
                     type="button"
@@ -1034,7 +466,6 @@ export default function Receipecomponent() {
                 <img src="images/product-img.jpg" alt="" />
               </figure>
               <div className="product__content">
-                
                 <div className="d-flex align-items-center">
                   <div className="product__tags">
                     <span className="product__tags__tag">ingredients</span>
@@ -1056,10 +487,96 @@ export default function Receipecomponent() {
                   >
                     <i className="tags-icon"></i>
                   </button>
-                  <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
+                  <button
+                    type="button"
+                    className="btn-icon-fade btn-icon-small show-panel"
+                    data-target="#item-collections-panel"
+                  >
                     <i className="layer-plus-icon"></i>
                   </button>
-                  <button type="button" className="btn-icon-fade btn-icon-small">
+                  <button
+                    type="button"
+                    className="btn-icon-fade btn-icon-small"
+                  >
+                    <i className="chart-bar-icon"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <div className="product">
+              <div className="product__title">
+              <Link href="/recipedetail/Almonds2" >
+                <h4>Almonds2</h4>
+                </Link>
+                <div className="dropdown">
+                  <button
+                    type="button"
+                    className="btn-icon-fade btn-icon-small dropdown__toggle"
+                  >
+                    <i className="ellipsis-v-icon"></i>
+                  </button>
+                  <div className="dropdown__menu">
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <i className="pen-icon"></i>
+                          Edit
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <i className="clone-icon"></i>
+                          Clone
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#" className="text-red">
+                          <i className="trash-icon"></i>
+                          Delete
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <figure className="product__img">
+                <img src="images/product-img.jpg" alt="" />
+              </figure>
+              <div className="product__content">
+                <div className="d-flex align-items-center">
+                  <div className="product__tags">
+                    <span className="product__tags__tag">ingredients</span>
+                  </div>
+                  <label htmlFor="publish2" className="custom-switch ml-auto">
+                    <input type="checkbox" id="publish2" />
+                    <span>&nbsp;</span>
+                  </label>
+                </div>
+                <p>Organic whole soaked</p>
+              </div>
+              <div className="product__footer">
+                <img src="images/company-logo.svg" alt="" />
+                <div className="product__footer__actions">
+                  <button
+                    type="button"
+                    className="btn-icon-fade btn-icon-small show-panel"
+                    data-target="#tags-panel"
+                  >
+                    {" "}
+                    <i className="tags-icon"></i>
+                  </button>
+                  <button
+                    type="button"
+                    className="btn-icon-fade btn-icon-small show-panel"
+                    data-target="#item-collections-panel"
+                  >
+                    <i className="layer-plus-icon"></i>
+                  </button>
+                  <button
+                    type="button"
+                    className="btn-icon-fade btn-icon-small"
+                  >
                     <i className="chart-bar-icon"></i>
                   </button>
                 </div>
@@ -1067,7 +584,9 @@ export default function Receipecomponent() {
             </div>
             <div className="product">
               <div className="product__title">
-                <h4>Almonds</h4>
+              <Link href="/recipedetail/Almonds3" >
+                <h4>Almonds3</h4>
+                </Link>
                 <div className="dropdown">
                   <button
                     type="button"
@@ -1103,7 +622,6 @@ export default function Receipecomponent() {
                 <img src="images/product-img.jpg" alt="" />
               </figure>
               <div className="product__content">
-                
                 <div className="d-flex align-items-center">
                   <div className="product__tags">
                     <span className="product__tags__tag">ingredients</span>
@@ -1118,17 +636,25 @@ export default function Receipecomponent() {
               <div className="product__footer">
                 <img src="images/company-logo.svg" alt="" />
                 <div className="product__footer__actions">
-
                   <button
                     type="button"
                     className="btn-icon-fade btn-icon-small show-panel"
                     data-target="#tags-panel"
-                  >                    <i className="tags-icon"></i>
+                  >
+                    <i className="tags-icon"></i>
                   </button>
-                  <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
+                  <button
+                    type="button"
+                    className="btn-icon-fade btn-icon-small show-panel"
+                    data-target="#item-collections-panel"
+                  >
                     <i className="layer-plus-icon"></i>
                   </button>
-                  <button type="button" className="btn-icon-fade btn-icon-small">
+                  <button
+                    type="button"
+                    className="btn-icon-fade btn-icon-small"
+                  >
+                    {" "}
                     <i className="chart-bar-icon"></i>
                   </button>
                 </div>
@@ -1136,7 +662,9 @@ export default function Receipecomponent() {
             </div>
             <div className="product">
               <div className="product__title">
-                <h4>Almonds</h4>
+              <Link href="/recipedetail/Almonds4" >
+                <h4>Almonds4</h4>
+                </Link>
                 <div className="dropdown">
                   <button
                     type="button"
@@ -1172,7 +700,6 @@ export default function Receipecomponent() {
                 <img src="images/product-img.jpg" alt="" />
               </figure>
               <div className="product__content">
-                
                 <div className="d-flex align-items-center">
                   <div className="product__tags">
                     <span className="product__tags__tag">ingredients</span>
@@ -1187,7 +714,6 @@ export default function Receipecomponent() {
               <div className="product__footer">
                 <img src="images/company-logo.svg" alt="" />
                 <div className="product__footer__actions">
-
                   <button
                     type="button"
                     className="btn-icon-fade btn-icon-small show-panel"
@@ -1195,424 +721,17 @@ export default function Receipecomponent() {
                   >
                     <i className="tags-icon"></i>
                   </button>
-                  <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
-                    <i className="layer-plus-icon"></i>
-                  </button>
-                  <button type="button" className="btn-icon-fade btn-icon-small">                    <i className="chart-bar-icon"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="product">
-              <div className="product__title">
-                <h4>Almonds</h4>
-                <div className="dropdown">
-                  <button
-                    type="button"
-                    className="btn-icon-fade btn-icon-small dropdown__toggle"
-                  >
-                    <i className="ellipsis-v-icon"></i>
-                  </button>
-                  <div className="dropdown__menu">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i className="pen-icon"></i>
-                          Edit
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="clone-icon"></i>
-                          Clone
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="text-red">
-                          <i className="trash-icon"></i>
-                          Delete
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <figure className="product__img">
-                <img src="images/product-img.jpg" alt="" />
-              </figure>
-              <div className="product__content">
-                
-                <div className="d-flex align-items-center">
-                  <div className="product__tags">
-                    <span className="product__tags__tag">ingredients</span>
-                  </div>
-                  <label htmlFor="publish2" className="custom-switch ml-auto">
-                    <input type="checkbox" id="publish2" />
-                    <span>&nbsp;</span>
-                  </label>
-                </div>
-                <p>Organic whole soaked</p>
-              </div>
-              <div className="product__footer">
-                <img src="images/company-logo.svg" alt="" />
-                <div className="product__footer__actions">
-
                   <button
                     type="button"
                     className="btn-icon-fade btn-icon-small show-panel"
-                    data-target="#tags-panel"
+                    data-target="#item-collections-panel"
                   >
-                    <i className="tags-icon"></i>
-                  </button>
-                  <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
                     <i className="layer-plus-icon"></i>
                   </button>
-                  <button type="button" className="btn-icon-fade btn-icon-small">
-                    <i className="chart-bar-icon"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="product">              <div className="product__title">
-                <h4>Almonds</h4>
-                <div className="dropdown">
                   <button
                     type="button"
-                    className="btn-icon-fade btn-icon-small dropdown__toggle"
+                    className="btn-icon-fade btn-icon-small"
                   >
-                    <i className="ellipsis-v-icon"></i>
-                  </button>
-                  <div className="dropdown__menu">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i className="pen-icon"></i>
-                          Edit
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="clone-icon"></i>
-                          Clone
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="text-red">
-                          <i className="trash-icon"></i>
-                          Delete
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <figure className="product__img">
-                <img src="images/product-img.jpg" alt="" />
-              </figure>
-              <div className="product__content">
-                
-                <div className="d-flex align-items-center">
-                  <div className="product__tags">
-                    <span className="product__tags__tag">ingredients</span>
-                  </div>
-                  <label htmlFor="publish2" className="custom-switch ml-auto">
-                    <input type="checkbox" id="publish2" />
-                    <span>&nbsp;</span>
-                  </label>
-                </div>
-                <p>Organic whole soaked</p>
-              </div>
-              <div className="product__footer">
-                <img src="images/company-logo.svg" alt="" />
-                <div className="product__footer__actions">
-
-                  <button
-                    type="button"
-                    className="btn-icon-fade btn-icon-small show-panel"
-                    data-target="#tags-panel"
-                  >
-                    <i className="tags-icon"></i>
-                  </button>
-                  <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
-                    <i className="layer-plus-icon"></i>
-                  </button>
-                  <button type="button" className="btn-icon-fade btn-icon-small">
-                    <i className="chart-bar-icon"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="product">
-              <div className="product__title">
-                <h4>Almonds</h4>
-                <div className="dropdown">
-                  <button
-                    type="button"
-                    className="btn-icon-fade btn-icon-small dropdown__toggle"                  >
-                    <i className="ellipsis-v-icon"></i>
-                  </button>
-                  <div className="dropdown__menu">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i className="pen-icon"></i>
-                          Edit
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="clone-icon"></i>
-                          Clone
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="text-red">
-                          <i className="trash-icon"></i>
-                          Delete
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <figure className="product__img">
-                <img src="images/product-img.jpg" alt="" />
-              </figure>
-              <div className="product__content">
-                
-                <div className="d-flex align-items-center">
-                  <div className="product__tags">
-                    <span className="product__tags__tag">ingredients</span>
-                  </div>
-                  <label htmlFor="publish2" className="custom-switch ml-auto">
-                    <input type="checkbox" id="publish2" />
-                    <span>&nbsp;</span>
-                  </label>
-                </div>
-                <p>Organic whole soaked</p>
-              </div>
-              <div className="product__footer">
-                <img src="images/company-logo.svg" alt="" />
-                <div className="product__footer__actions">
-
-                  <button
-                    type="button"
-                    className="btn-icon-fade btn-icon-small show-panel"
-                    data-target="#tags-panel"
-                  >
-                    <i className="tags-icon"></i>
-                  </button>
-                  <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
-                    <i className="layer-plus-icon"></i>
-                  </button>
-                  <button type="button" className="btn-icon-fade btn-icon-small">
-                    <i className="chart-bar-icon"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="product">
-              <div className="product__title">
-                <h4>Almonds</h4>
-                <div className="dropdown">
-                  <button
-                    type="button"
-                    className="btn-icon-fade btn-icon-small dropdown__toggle"
-                  >
-                    <i className="ellipsis-v-icon"></i>
-                  </button>
-                  <div className="dropdown__menu">
-                    <ul>
-                      <li>                        <a href="#">
-                          <i className="pen-icon"></i>
-                          Edit
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="clone-icon"></i>
-                          Clone
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="text-red">
-                          <i className="trash-icon"></i>
-                          Delete
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <figure className="product__img">
-                <img src="images/product-img.jpg" alt="" />
-              </figure>
-              <div className="product__content">
-                
-                <div className="d-flex align-items-center">
-                  <div className="product__tags">
-                    <span className="product__tags__tag">ingredients</span>
-                  </div>
-                  <label htmlFor="publish2" className="custom-switch ml-auto">
-                    <input type="checkbox" id="publish2" />
-                    <span>&nbsp;</span>
-                  </label>
-                </div>
-                <p>Organic whole soaked</p>
-              </div>
-              <div className="product__footer">
-                <img src="images/company-logo.svg" alt="" />
-                <div className="product__footer__actions">
-
-                  <button
-                    type="button"
-                    className="btn-icon-fade btn-icon-small show-panel"
-                    data-target="#tags-panel"
-                  >
-                    <i className="tags-icon"></i>
-                  </button>
-                  <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
-                    <i className="layer-plus-icon"></i>
-                  </button>
-                  <button type="button" className="btn-icon-fade btn-icon-small">
-                    <i className="chart-bar-icon"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="product">
-              <div className="product__title">
-                <h4>Almonds</h4>
-                <div className="dropdown">
-                  <button
-                    type="button"
-                    className="btn-icon-fade btn-icon-small dropdown__toggle"
-                  >
-                    <i className="ellipsis-v-icon"></i>
-                  </button>
-                  <div className="dropdown__menu">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i className="pen-icon"></i>
-                          Edit
-                        </a>
-                      </li>
-                      <li>                        <a href="#">
-                          <i className="clone-icon"></i>
-                          Clone
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#" className="text-red">
-                          <i className="trash-icon"></i>
-                          Delete
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <figure className="product__img">
-                <img src="images/product-img.jpg" alt="" />
-              </figure>
-              <div className="product__content">
-                
-                <div className="d-flex align-items-center">
-                  <div className="product__tags">
-                    <span className="product__tags__tag">ingredients</span>
-                  </div>
-                  <label htmlFor="publish2" className="custom-switch ml-auto">
-                    <input type="checkbox" id="publish2" />
-                    <span>&nbsp;</span>
-                  </label>
-                </div>
-                <p>Organic whole soaked</p>
-              </div>
-              <div className="product__footer">
-                <img src="images/company-logo.svg" alt="" />
-                <div className="product__footer__actions">
-
-                  <button
-                    type="button"
-                    className="btn-icon-fade btn-icon-small show-panel"
-                    data-target="#tags-panel"
-                  >
-                    <i className="tags-icon"></i>
-                  </button>
-                  <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
-                    <i className="layer-plus-icon"></i>
-                  </button>
-                  <button type="button" className="btn-icon-fade btn-icon-small">
-                    <i className="chart-bar-icon"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div className="product">
-              <div className="product__title">
-                <h4>Almonds</h4>
-                <div className="dropdown">
-                  <button
-                    type="button"
-                    className="btn-icon-fade btn-icon-small dropdown__toggle"
-                  >
-                    <i className="ellipsis-v-icon"></i>
-                  </button>
-                  <div className="dropdown__menu">
-                    <ul>
-                      <li>
-                        <a href="#">
-                          <i className="pen-icon"></i>
-                          Edit
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="clone-icon"></i>
-                          Clone
-                        </a>
-                      </li>
-                      <li>                        <a href="#" className="text-red">
-                          <i className="trash-icon"></i>
-                          Delete
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <figure className="product__img">
-                <img src="images/product-img.jpg" alt="" />
-              </figure>
-              <div className="product__content">
-                
-                <div className="d-flex align-items-center">
-                  <div className="product__tags">
-                    <span className="product__tags__tag">ingredients</span>
-                  </div>
-                  <label htmlFor="publish2" className="custom-switch ml-auto">
-                    <input type="checkbox" id="publish2" />
-                    <span>&nbsp;</span>
-                  </label>
-                </div>
-                <p>Organic whole soaked</p>
-              </div>
-              <div className="product__footer">
-                <img src="images/company-logo.svg" alt="" />
-                <div className="product__footer__actions">
-
-                  <button
-                    type="button"
-                    className="btn-icon-fade btn-icon-small show-panel"
-                    data-target="#tags-panel"
-                  >
-                    <i className="tags-icon"></i>
-                  </button>
-                  <button type="button" className="btn-icon-fade btn-icon-small show-panel" data-target="#item-collections-panel">
-                    <i className="layer-plus-icon"></i>
-                  </button>
-                  <button type="button" className="btn-icon-fade btn-icon-small">
                     <i className="chart-bar-icon"></i>
                   </button>
                 </div>
@@ -1620,8 +739,7 @@ export default function Receipecomponent() {
             </div>
           </div>
         </div>
-    </main>
-        
+      </main>
     </>
-    )
-  }
+  );
+}

@@ -1,13 +1,13 @@
 export default function Header() {
-    return (
-      <header className="header">
+  return (
+    <header className="header">
       <a href="index.html" className="header__logo" aria-label="Go to Homepage">
         <img src="images/logo.svg" alt="" />
       </a>
       <div className="header__page-title">
         <h1>
           <i className="blender-icon"></i>
-          Receipes
+          Receipesss
         </h1>
       </div>
       <div className="header__account">
@@ -41,5 +41,5 @@ export default function Header() {
         </div>
       </div>
     </header>
-    )
-  }
+  );
+}
