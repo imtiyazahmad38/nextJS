@@ -113,4 +113,21 @@ $(document).ready(function () {
   });
 });
 
+//tabs in recipe detail page
+$('#tabs li a:not(:first)').addClass('inactive');
+$('.tabcontent').hide();
+$('.tabcontent:first').show();
+
+$('.tabs__links a').each(function () {
+  const el = $(this);
+  el.on('click', function (e) {
+    var t = $(this).attr('id');
+    e.preventDefault();
+    const target = el.attr('href');
+    el.closest('.tabs__links').find('a').removeClass('active');
+    el.addClass('active');
+    $('.tabcontent').hide();
+    $('#'+ t + 'C').fadeIn('slow');
+  });
+});
 

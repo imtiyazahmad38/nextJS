@@ -1,12 +1,15 @@
 import { useRouter } from 'next/router'
+import Layout from "../../src/layout/Container";
+import Detail from '../../src/recipedetail/Detail';
 
 const RecipeDetail = (props) => {
   const router = useRouter()
-
-  const { pid } = router.query
-  
-
-  return <p>Recipe:{ JSON.stringify(router.query)}</p>
+  const {Recipedetail} =  router.query
+  return(
+    <Layout>
+      <Detail {...props}id={Recipedetail} />
+    </Layout>
+  ) 
 }
 
 export default RecipeDetail
